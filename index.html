@@ -5,366 +5,444 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-
-  <title>
-    Juan Morcwel D. Sy-wico | A Game Developer
-  </title>
-
-  <meta name="description" content="Portfolio of Jm Sy-wico, a game developer creating interactive experiences using Unity and modern game technologies.">
-
+  <title>JM SY-WICO — PHANTOM DEVELOPER</title>
+  <meta name="description" content="Portfolio of JM Sy-wico, a game developer creating interactive experiences using Unity and modern game technologies.">
   <meta name="keywords" content="Jm, game developer, Unity, C#, game design, indie games, portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+  <!-- Boot Screen -->
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-screen__bg"></div>
+    <div class="boot-screen__content">
+      <div class="boot-screen__persona">PERSONA</div>
+      <div class="boot-screen__edition">DEVELOPER EDITION</div>
+      <div class="boot-screen__name">JM SY-WICO</div>
+      <div class="boot-screen__prompt">── PRESS ANY KEY OR CLICK TO CONTINUE ──</div>
+      <div class="boot-screen__warning">Content: C# · Unity · Passionate Programming</div>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-  
-          <span>Juan Morcwel D.Sy-wico
-        </h1>
-        <p>A Game Developer.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" id="top">
+    <div class="nav__inner">
+      <div class="nav__logo">JM</div>
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#work" class="nav__link"><span class="nav__num">01</span> WORK</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link"><span class="nav__num">02</span> ABOUT</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link"><span class="nav__num">03</span> CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header / Hero -->
+  <header class="header" role="banner">
+    <div class="header__content">
+      <div class="header__eyebrow" id="header-eyebrow">PHANTOM DEVELOPER // GAME ENGINEER</div>
+      <h1 class="heading-primary">
+        <span class="heading-primary__first">JUAN</span>
+        <span class="heading-primary__last">SY-WICO</span>
+      </h1>
+      <div class="header__status">
+        <div class="status-chip">LV.23</div>
+        <div class="status-chip">DLSU MANILA</div>
+        <div class="status-chip">UNITY DEVELOPER</div>
       </div>
+      <a href="#contact" class="btn btn--persona">INITIATE CONTACT ▶</a>
     </div>
   </header>
 
   <main role="main">
 
+    <!-- Character Skills / Stats -->
+    <section class="stats" id="stats">
+      <div class="row">
+        <div class="section-header reveal">
+          <span class="section-header__num">STATUS</span>
+          <h2 class="section-header__title">CHARACTER SKILLS</h2>
+        </div>
+        <div class="stats__grid">
 
+          <div class="stat-item reveal">
+            <div class="stat-item__top">
+              <span class="stat-item__icon">⚔</span>
+              <span class="stat-item__name">STRENGTH</span>
+              <span class="stat-item__rank">S</span>
+            </div>
+            <div class="stat-item__detail">C / C++ / C# / Python</div>
+            <div class="stat-item__bar">
+              <div class="stat-item__fill" data-fill="90"></div>
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-item__top">
+              <span class="stat-item__icon">✦</span>
+              <span class="stat-item__name">MAGIC</span>
+              <span class="stat-item__rank">S</span>
+            </div>
+            <div class="stat-item__detail">Unity Engine</div>
+            <div class="stat-item__bar">
+              <div class="stat-item__fill" data-fill="92"></div>
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-item__top">
+              <span class="stat-item__icon">🛡</span>
+              <span class="stat-item__name">ENDURANCE</span>
+              <span class="stat-item__rank">A</span>
+            </div>
+            <div class="stat-item__detail">Game Engineering · QA</div>
+            <div class="stat-item__bar">
+              <div class="stat-item__fill" data-fill="80"></div>
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-item__top">
+              <span class="stat-item__icon">⚡</span>
+              <span class="stat-item__name">AGILITY</span>
+              <span class="stat-item__rank">A</span>
+            </div>
+            <div class="stat-item__detail">Multiplayer · Gameplay Systems</div>
+            <div class="stat-item__bar">
+              <div class="stat-item__fill" data-fill="78"></div>
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-item__top">
+              <span class="stat-item__icon">★</span>
+              <span class="stat-item__name">LUCK</span>
+              <span class="stat-item__rank">B</span>
+            </div>
+            <div class="stat-item__detail">Game Design · Level Design</div>
+            <div class="stat-item__bar">
+              <div class="stat-item__fill" data-fill="70"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Palaces -->
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+        <div class="section-header reveal">
+          <span class="section-header__num">PALACES</span>
+          <h2 class="section-header__title">MY WORK</h2>
+        </div>
+        <div class="work__grid">
 
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Programming Languages</h3>
-              <p>
-                Programming languages I have experience with and have used in my projects.
-              </p>
-              <ul class="work__list">
-                <li>C</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Python</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                 Check out Github <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/JmSywico" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+          <!-- Arsenal -->
+          <div class="work-card work-card--featured reveal">
+            <div class="work-card__stripe"></div>
+            <div class="work-card__body">
+              <div class="work-card__tag">ARSENAL</div>
+              <h3 class="work-card__title">PROGRAMMING LANGUAGES</h3>
+              <p class="work-card__desc">Languages mastered in the field of battle — each one a weapon in the developer's arsenal.</p>
+              <div class="work-card__skills">
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Python</span>
+              </div>
+              <div class="work-card__links">
+                <a href="https://github.com/JmSywico" class="work-card__link" target="_blank">VIEW GITHUB ▶</a>
+                <a href="https://github.com/JmSywico" class="work-card__github" target="_blank" title="GitHub">
+                  <img src="./images/github.svg" alt="GitHub" class="work-card__github-icon">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/works.png" class="work__image" alt="Project 1" />
+            <div class="work-card__image-box">
+              <img src="./images/works.png" alt="Programming Languages" class="work-card__image">
             </div>
           </div>
 
-           <div class="work__box">
-            <div class="work__text">
-              <h3>Scars of Harpuia</h3>
-              <p>
-                Can two unlikely allies bring peace to a world divided by war?  
-                Explore the war-torn continent of Pananima as Rene, a renegade avian scavenger from the Outlands. 
-                oin forces with Petra, the princess of a rival nation, and embark on a heartfelt journey of discovery, 
-                compassion, and friendship as you fight to prevent a growing conflict from tearing the world apart.
-              </p>
-              <ul class="work__list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Game Engineer</li>
-                <li>Multiplayer Systems Developer</li>
-                <li>Gameplay Programmer</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://www.manybees.online/scarsofharpuia" class="link__text">
-                  Play Game <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/AnviHere/ScarsOfHarpuia/tree/testing">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+          <!-- Scars of Harpuia -->
+          <div class="work-card work-card--featured reveal">
+            <div class="work-card__stripe"></div>
+            <div class="work-card__body">
+              <div class="work-card__tag">PALACE I</div>
+              <h3 class="work-card__title">SCARS OF HARPUIA</h3>
+              <p class="work-card__desc">Can two unlikely allies bring peace to a world divided by war? Explore the war-torn continent of Pananima as Rene, a renegade avian scavenger — join forces with Petra and fight to prevent a growing conflict from tearing the world apart.</p>
+              <div class="work-card__skills">
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Multiplayer</span>
+                <span class="skill-tag">Gameplay Programmer</span>
+              </div>
+              <div class="work-card__links">
+                <a href="https://www.manybees.online/scarsofharpuia" class="work-card__link" target="_blank">PLAY GAME ▶</a>
+                <a href="https://github.com/AnviHere/ScarsOfHarpuia/tree/testing" class="work-card__github" target="_blank" title="View Source Code">
+                  <img src="./images/github.svg" alt="GitHub" class="work-card__github-icon">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <a href="https://www.manybees.online/scarsofharpuia" class="work__image-link" title="Play Scars of Harpuia">
-                <img src="./images/ScarsOfHarpuia.png" class="work__image" alt="Scars of Harpuia" />
+            <div class="work-card__image-box">
+              <a href="https://www.manybees.online/scarsofharpuia" target="_blank">
+                <img src="./images/ScarsOfHarpuia.png" alt="Scars of Harpuia" class="work-card__image">
               </a>
             </div>
           </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Roots of Survival</h3>
-              <p>
-                Can you master the underground and thrive beneath the soil? 
-                Rely on water as your lifeline as you navigate through roots and earth, 
-                elving deeper into the heart of nature. 
-                Embark on this epic underground journey and discover how far you can go!
-              </p>
-              <ul class="work__list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Gameplay Mechanics Programmer</li>
-                <li>Quality Assurance</li>
-                <li>Playtesting</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://vem.itch.io/rootsofsurvival" class="link__text">
-                  Play Game <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/JmSywico/Game-Jam-Roots-of-Survival">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+          <!-- Roots of Survival -->
+          <div class="work-card work-card--featured reveal">
+            <div class="work-card__stripe"></div>
+            <div class="work-card__body">
+              <div class="work-card__tag">PALACE II</div>
+              <h3 class="work-card__title">ROOTS OF SURVIVAL</h3>
+              <p class="work-card__desc">Can you master the underground and thrive beneath the soil? Rely on water as your lifeline as you navigate through roots and earth, delving deeper into the heart of nature. Embark on an epic underground journey.</p>
+              <div class="work-card__skills">
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Gameplay Mechanics</span>
+                <span class="skill-tag">QA · Playtesting</span>
+              </div>
+              <div class="work-card__links">
+                <a href="https://vem.itch.io/rootsofsurvival" class="work-card__link" target="_blank">PLAY GAME ▶</a>
+                <a href="https://github.com/JmSywico/Game-Jam-Roots-of-Survival" class="work-card__github" target="_blank" title="View Source Code">
+                  <img src="./images/github.svg" alt="GitHub" class="work-card__github-icon">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <a href="https://vem.itch.io/rootsofsurvival" class="work__image-link" title="Play Roots of Survival">
-                <img src="./images/rootsofsurvival.png" class="work__image" alt="Roots of Survival" />
+            <div class="work-card__image-box">
+              <a href="https://vem.itch.io/rootsofsurvival" target="_blank">
+                <img src="./images/rootsofsurvival.png" alt="Roots of Survival" class="work-card__image">
               </a>
             </div>
           </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Mask Madness</h3>
-              <p>
-                Dive into Mask Madness and explore the Batcave like never before! 
-                Armed with just a flashlight, you'll hunt for elusive Batman masks while dodging pesky Batarangs. 
-                Think you can handle the challenge and collect them all while staying alive? Let’s find out!
+          <!-- Mini card grid -->
+          <div class="work-mini-grid">
 
-              </p>
-              <ul class="work__list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Game Logic Programmer</li>
-                <li>Game Mechanics</li>
-                <li>Quality Assurance</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://vem.itch.io/mask-madness" class="link__text">
-                  Play Game <span>&rarr;</span>
+            <div class="work-mini-card reveal">
+              <div class="work-mini-card__tag">PALACE III</div>
+              <h3 class="work-mini-card__title">MASK MADNESS</h3>
+              <div class="work-mini-card__image-box">
+                <a href="https://vem.itch.io/mask-madness" target="_blank">
+                  <img src="./images/maskmadness.png" alt="Mask Madness" class="work-mini-card__image">
                 </a>
-                <a href="https://github.com/JmSywico/Game-Jam-Roots-of-Survival">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+              </div>
+              <p class="work-mini-card__desc">Dive into the Batcave armed with just a flashlight, hunting elusive Batman masks while dodging Batarangs.</p>
+              <div class="work-mini-card__skills">
+                <span class="skill-tag">Unity</span><span class="skill-tag">C#</span><span class="skill-tag">Game Logic</span>
+              </div>
+              <div class="work-mini-card__links">
+                <a href="https://vem.itch.io/mask-madness" class="work-card__link" target="_blank">PLAY GAME ▶</a>
+                <a href="https://github.com/JmSywico/Game-Jam-Roots-of-Survival" class="work-card__github" target="_blank">
+                  <img src="./images/github.svg" alt="GitHub" class="work-card__github-icon">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <a href="https://vem.itch.io/mask-madness" class="work__image-link" title="Play Mask Madness">
-                <img src="./images/maskmadness.png" class="work__image" alt="Mask Madness" />
-              </a>
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Mythos Manuscripts</h3>
-              <p>
-                Mythos Manuscripts is a narrative puzzle experience where players explore classic myths,
-                such as The Odyssey,to uncover hidden keywords embedded within the text. 
-                By reading closely and interpreting subtle clues, players unlock deeper layers of meaning across interconnected stories,
-                blending literature with interactive discovery.
-
-              </p>
-              <ul class="work__list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Lead Programmer</li>
-                <li>Game Logic Implementation</li>
-                <li>Game Mechanics</li>
-                <li>Quality Assurance</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://jmsywico.itch.io/mythos-manuscripts" class="link__text">
-                  Play Game <span>&rarr;</span>
+            <div class="work-mini-card reveal">
+              <div class="work-mini-card__tag">PALACE IV</div>
+              <h3 class="work-mini-card__title">MYTHOS MANUSCRIPTS</h3>
+              <div class="work-mini-card__image-box">
+                <a href="https://jmsywico.itch.io/mythos-manuscripts" target="_blank">
+                  <img src="./images/mythosmanuscript.png" alt="Mythos Manuscripts" class="work-mini-card__image">
                 </a>
-                <a href="https://github.com/JmSywico/Mythos-Manuscripts">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+              </div>
+              <p class="work-mini-card__desc">A narrative puzzle experience exploring classic myths, uncovering hidden keywords embedded within ancient text.</p>
+              <div class="work-mini-card__skills">
+                <span class="skill-tag">Unity</span><span class="skill-tag">C#</span><span class="skill-tag">Lead Dev</span>
+              </div>
+              <div class="work-mini-card__links">
+                <a href="https://jmsywico.itch.io/mythos-manuscripts" class="work-card__link" target="_blank">PLAY GAME ▶</a>
+                <a href="https://github.com/JmSywico/Mythos-Manuscripts" class="work-card__github" target="_blank">
+                  <img src="./images/github.svg" alt="GitHub" class="work-card__github-icon">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <a href="https://jmsywico.itch.io/mythos-manuscripts" class="work__image-link" title="Play Mythos Manuscripts">
-                <img src="./images/mythosmanuscript.png" class="work__image" alt="Mythos Manuscripts" />
-              </a>
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>The Batcave</h3>
-              <p>
-              Check out the virtual environment created using Unity Engine! 
-              Dive into the Batcave and see how they’ve brought Gotham’s 
-              ultimate hideout to life with their creativity and technical skills. 
-              </p>
-              <ul class="work__list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Level Design</li>
-                <li>Asset Layout</li>
-                <li>Quality Assurance</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://drive.google.com/file/d/16a0OsJdyYsmQfuZj22KgStfr3CL1Oqf4/view?usp=sharing" target="_blank" class="link__text">
-                  Watch Video <span>&rarr;</span>
+            <div class="work-mini-card reveal">
+              <div class="work-mini-card__tag">PALACE V</div>
+              <h3 class="work-mini-card__title">THE BATCAVE</h3>
+              <div class="work-mini-card__image-box">
+                <a href="https://drive.google.com/file/d/16a0OsJdyYsmQfuZj22KgStfr3CL1Oqf4/view?usp=sharing" target="_blank">
+                  <img src="./images/batcave.png" alt="The Batcave" class="work-mini-card__image">
                 </a>
-                <a href="https://github.com/JmSywico/Game-Jam-Roots-of-Survival">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+              </div>
+              <p class="work-mini-card__desc">A virtual environment recreating Gotham's ultimate hideout using Unity Engine with creative level design.</p>
+              <div class="work-mini-card__skills">
+                <span class="skill-tag">Unity</span><span class="skill-tag">Level Design</span><span class="skill-tag">Asset Layout</span>
+              </div>
+              <div class="work-mini-card__links">
+                <a href="https://drive.google.com/file/d/16a0OsJdyYsmQfuZj22KgStfr3CL1Oqf4/view?usp=sharing" class="work-card__link" target="_blank">WATCH VIDEO ▶</a>
+              </div>
+            </div>
+
+            <div class="work-mini-card reveal">
+              <div class="work-mini-card__tag">PALACE VI</div>
+              <h3 class="work-mini-card__title">AGAIN?</h3>
+              <div class="work-mini-card__image-box">
+                <a href="https://zarbana.itch.io/again" target="_blank">
+                  <img src="./images/again.png" alt="Again?" class="work-mini-card__image">
+                </a>
+              </div>
+              <p class="work-mini-card__desc">Outsmart the facility — navigate locked corridors, rewinding time to correct mistakes and push closer to freedom.</p>
+              <div class="work-mini-card__skills">
+                <span class="skill-tag">Unity</span><span class="skill-tag">C#</span><span class="skill-tag">Gameplay</span>
+              </div>
+              <div class="work-mini-card__links">
+                <a href="https://zarbana.itch.io/again" class="work-card__link" target="_blank">PLAY GAME ▶</a>
+                <a href="https://github.com/JmSywico/IEPRFDV_Again" class="work-card__github" target="_blank">
+                  <img src="./images/github.svg" alt="GitHub" class="work-card__github-icon">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <a href="https://drive.google.com/file/d/16a0OsJdyYsmQfuZj22KgStfr3CL1Oqf4/view?usp=sharing" class="work__image-link" title="Watch The Batcave Video">
-                <img src="./images/batcave.png" class="work__image" alt="The Batcave" />
-              </a>
-            </div>
+
           </div>
-
-           <div class="work__box">
-            <div class="work__text">
-              <h3>Again?</h3>
-              <p>
-                Can you outsmart the facility and break free from the deepest levels of security?
-                Rely on every decision as your lifeline as you navigate locked corridors,
-                rewinding time to correct mistakes and push closer to freedom.
-                Embark on a relentless escape and see if you can outplay the prison itself!
-              </p>
-              <ul class="work__list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Gameplay Mechanics Programmer</li>
-                <li>Quality Assurance</li>
-                <li>Playtesting</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://zarbana.itch.io/again" class="link__text">
-                  Play Game <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/JmSywico/IEPRFDV_Again">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <a href="https://zarbana.itch.io/again" class="work__image-link" title="Play Again?">
-                <img src="./images/again.png" class="work__image" alt="Again?" />
-              </a>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-
-
+    <!-- About / Character Profile -->
     <section class="about" id="about">
       <div class="row">
-        <h2>About Me</h2>
+        <div class="section-header reveal">
+          <span class="section-header__num">PROFILE</span>
+          <h2 class="section-header__title">ABOUT ME</h2>
+        </div>
         <div class="about__content">
-          <div class="about__text">
-  
-            <p>
-              I am Juan Morcwel D. Sy-wico, a 23 year-old college student pursuing 
-              a Bachelor of Science degree in Interactive Entertainment, Major in Game Development, 
-              under the College of Computer Studies at De La Salle University Manila/Laguna.
-            </p>
-            <p>
-              In addition to my studies, I work at Eagle Planners Insurance Agency and Consultancy, 
-              where I serve as IT tech support and bookkeeper.
-            </p>
 
-            <a href="https://canva.link/sywico-resume" class="btn">My Resume</a>
+          <div class="about__image-side reveal">
+            <div class="about__photo-frame">
+              <img src="./images/juan-morcwel-sywico.jpg" alt="Juan Morcwel Sy-wico" class="about__photo">
+              <div class="about__photo-border"></div>
+            </div>
+            <div class="about__profile-card">
+              <div class="profile-row"><span>NAME</span><span>JM SY-WICO</span></div>
+              <div class="profile-row"><span>CLASS</span><span>GAME DEVELOPER</span></div>
+              <div class="profile-row"><span>LEVEL</span><span>23</span></div>
+              <div class="profile-row"><span>SCHOOL</span><span>DLSU MANILA</span></div>
+              <div class="profile-row"><span>ARCANA</span><span>THE DEVELOPER</span></div>
+            </div>
           </div>
 
-          <div class="about__photo-container">
+          <div class="about__text-side reveal">
+            <div class="about__persona-stats">
+              <div class="persona-stat">
+                <span class="persona-stat__label">KNOWLEDGE</span>
+                <div class="persona-stat__dots">
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot"></span>
+                </div>
+                <span class="persona-stat__rank">RANK 4</span>
+              </div>
+              <div class="persona-stat">
+                <span class="persona-stat__label">PROFICIENCY</span>
+                <div class="persona-stat__dots">
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                </div>
+                <span class="persona-stat__rank">RANK 5</span>
+              </div>
+              <div class="persona-stat">
+                <span class="persona-stat__label">COURAGE</span>
+                <div class="persona-stat__dots">
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot"></span>
+                </div>
+                <span class="persona-stat__rank">RANK 4</span>
+              </div>
+              <div class="persona-stat">
+                <span class="persona-stat__label">CHARM</span>
+                <div class="persona-stat__dots">
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <span class="persona-stat__rank">RANK 3</span>
+              </div>
+              <div class="persona-stat">
+                <span class="persona-stat__label">KINDNESS</span>
+                <div class="persona-stat__dots">
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot dot--filled"></span>
+                  <span class="dot"></span>
+                </div>
+                <span class="persona-stat__rank">RANK 4</span>
+              </div>
+            </div>
 
-            <img class="about__photo" src="./images/juan-morcwel-sywico.jpg" alt="" />
+            <p>I am Juan Morcwel D. Sy-wico, a 23-year-old college student pursuing a Bachelor of Science degree in Interactive Entertainment, Major in Game Development, under the College of Computer Studies at De La Salle University Manila/Laguna.</p>
+            <p>In addition to my studies, I work at Eagle Planners Insurance Agency and Consultancy, where I serve as IT tech support and bookkeeper.</p>
+            <a href="https://canva.link/sywico-resume" class="btn btn--persona" target="_blank">VIEW RESUME ▶</a>
           </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
-
-
+  <!-- Contact -->
   <section class="contact" id="contact">
     <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Looking to bring a game idea to life or need a developer for your next project? 
-          Whether it’s gameplay systems, performance optimization, or creative collaboration, 
-          I’m always open to exciting opportunities.
-          Have a question, an idea, or just want to say hi? 
-          Feel free to reach out—I’d love to connect.
-          The best way to contact me is via email.
-
-        </p>
-
-        <a href="juanjmsywico@gmail.com" class="btn">juanjmsywico@gmail.com</a>
+      <div class="section-header reveal">
+        <span class="section-header__num">TRANSMISSION</span>
+        <h2 class="section-header__title">GET IN TOUCH</h2>
+      </div>
+      <div class="contact__content reveal">
+        <div class="dialogue-box">
+          <div class="dialogue-box__header">MORGANA</div>
+          <p class="dialogue-box__text">"Looking to bring a game idea to life or need a developer for your next project? Whether it's gameplay systems, performance optimization, or creative collaboration — the Phantom Dev is always open to exciting opportunities. Best way to reach me is via email."</p>
+        </div>
+        <a href="mailto:juanjmsywico@gmail.com" class="btn btn--persona btn--large">SEND MESSAGE ▶</a>
+        <div class="contact__email">juanjmsywico@gmail.com</div>
       </div>
     </div>
   </section>
 
-
-  <footer role="contentinfo" class="footer">
+  <!-- Footer / Social Links -->
+  <footer class="footer" role="contentinfo">
     <div class="row">
-
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://x.com/juanswish_" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+      <div class="footer__social-links">
+        <span class="footer__label">SOCIAL LINKS</span>
+        <div class="footer__icons">
+          <a href="https://x.com/juanswish_" class="footer__social-item" title="Twitter / X">
+            <img src="./images/twitter.svg" alt="Twitter" class="footer__social-image">
           </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/JmSywico" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          <a href="https://github.com/JmSywico" class="footer__social-item" title="GitHub">
+            <img src="./images/github.svg" alt="GitHub" class="footer__social-image">
           </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/jm-sy-wico-0a1578400/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/jm-sy-wico-0a1578400/" class="footer__social-item" title="LinkedIn">
+            <img src="./images/linkedin.svg" alt="LinkedIn" class="footer__social-image">
           </a>
-        </li>
-      </ul>
-
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">PHANTOM DEVELOPER // JM SY-WICO // 2024</span>
+      </div>
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+
   <script src="./index.js"></script>
 </body>
 
