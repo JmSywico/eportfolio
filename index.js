@@ -246,7 +246,8 @@ function initBattle() {
     bPrev && bPrev.addEventListener('click', () => navigate(-1));
     bNext && bNext.addEventListener('click', () => navigate(1));
     bAllOut && bAllOut.addEventListener('click', () => allOutAttack(PROJECTS[currentIdx].playUrl));
-    /* Keyboard: left/right arrows navigate, 1-4 trigger actions */
+
+    /* Keyboard: arrow keys navigate, 1–4 trigger actions */
     document.addEventListener('keydown', (e) => {
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
         if (e.key === 'ArrowLeft')  navigate(-1);
@@ -256,6 +257,19 @@ function initBattle() {
         if (e.key === '3') handleAction('source');
         if (e.key === '4') handleAction('attack');
     });
+
+    /* Touch swipe on the battle screen */
+    const battleEl = document.getElementById('battle-screen');
+    if (battleEl) {
+        let touchStartX = 0;
+        battleEl.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+        battleEl.addEventListener('touchend', (e) => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 50) navigate(dx < 0 ? 1 : -1);
+        }, { passive: true });
+    }
 }
 
 
