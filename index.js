@@ -217,12 +217,6 @@ const PROJECTS = [
     }
 ];
 
-const PARTY = [
-    { name: 'JOKER',  init: 'JM', hp: 121, maxHp: 121, sp: 50, maxSp: 58 },
-    { name: 'SKULL',  init: 'C#', hp: 108, maxHp: 108, sp: 38, maxSp: 40 },
-    { name: 'PANTHER', init: 'UN', hp: 95, maxHp: 95,  sp: 62, maxSp: 62 },
-    { name: 'MONA',   init: 'QA', hp: 82, maxHp: 82,   sp: 55, maxSp: 55 },
-];
 
 /* State */
 let currentIdx = 0;
@@ -240,12 +234,10 @@ const bIndicator = document.getElementById('b-indicator');
 const bPrev      = document.getElementById('b-prev');
 const bNext      = document.getElementById('b-next');
 const bAllOut    = document.getElementById('b-all-out');
-const partyHud   = document.getElementById('battle-party');
 const aoOverlay  = document.getElementById('all-out-overlay');
 
 function initBattle() {
     if (!bName) return;
-    buildPartyHUD();
     buildIndicators();
     loadProject(0, false);
     document.querySelectorAll('.battle-menu__item').forEach(btn => {
@@ -266,27 +258,6 @@ function initBattle() {
     });
 }
 
-function buildPartyHUD() {
-    if (!partyHud) return;
-    partyHud.innerHTML = PARTY.map(p => `
-        <div class="battle-party__member">
-            <div class="battle-party__portrait">${p.init}</div>
-            <div class="battle-party__name">${p.name}</div>
-            <div class="battle-party__bars">
-                <div class="battle-party__bar-row">
-                    <span class="battle-bar-label">HP</span>
-                    <div class="battle-bar battle-bar--hp"><div class="battle-bar__fill" style="width:${Math.round(p.hp/p.maxHp*100)}%"></div></div>
-                    <span class="battle-bar-num">${p.hp}/${p.maxHp}</span>
-                </div>
-                <div class="battle-party__bar-row">
-                    <span class="battle-bar-label">SP</span>
-                    <div class="battle-bar battle-bar--sp"><div class="battle-bar__fill" style="width:${Math.round(p.sp/p.maxSp*100)}%"></div></div>
-                    <span class="battle-bar-num">${p.sp}/${p.maxSp}</span>
-                </div>
-            </div>
-        </div>
-    `).join('');
-}
 
 function buildIndicators() {
     if (!bIndicator) return;
@@ -341,14 +312,16 @@ function buildTechTags(techs) {
     }).join('');
 }
 
+let dialogueTimer = null;
 function setDialogue(text) {
     if (!bDialogue) return;
+    clearTimeout(dialogueTimer);
     bDialogue.textContent = '';
     let i = 0;
     const tick = () => {
         if (i < text.length) {
             bDialogue.textContent += text[i++];
-            setTimeout(tick, 22);
+            dialogueTimer = setTimeout(tick, 22);
         }
     };
     tick();
